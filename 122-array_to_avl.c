@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-#include <stdlib.h>
 
 /**
  * array_to_avl - turns an array to a avl tree
@@ -7,7 +6,6 @@
  * @size: size of array
  * Return: AVL tree from array
  */
-
 avl_t *array_to_avl(int *array, size_t size)
 {
 	size_t i, j = 0;
@@ -23,7 +21,7 @@ avl_t *array_to_avl(int *array, size_t size)
 		for (j = 0; j < i; j++)
 		{
 			if (array[j] == array[i])
-			break;
+				break;
 		}
 		if (j == i)
 		{
